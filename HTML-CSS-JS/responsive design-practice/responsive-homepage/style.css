@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.63)), url("images/dark-city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.navigation a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: orange;
+}
+
+.hero-text {
+  text-align: center;
+  margin: auto;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-text a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: orange;
+  color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .navigation ul {
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .hero-text a {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
